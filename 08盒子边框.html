@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子边框</title>
+	<style>
+		div {
+			margin: 10px;
+			width: 500px;
+			height: 50px;
+		}
+
+		div:first-child {
+			border: 1px dashed red;
+		}
+
+		div:nth-child(2) {
+			border-style: double dotted;
+			border-color: red green blue yellow; 
+			border-width: 3px;
+		}
+
+		div:nth-child(3) {
+			background-color: lightblue;
+			border-style: none none none solid;
+			border-left-color: #1596e6;
+			border-left-width:3px;
+		}
+
+		input {
+			width: 400px;
+			height: 45px;
+			border: 1px solid grey;
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<div>我是一个div</div>
+	<div>我是一个div</div>
+	<div>我是一个div</div>
+	<div>我是一个div</div>
+	<div>我是一个div</div>
+
+	<input type="text" placeholder="用户名">
+	
+</body>
+</html>

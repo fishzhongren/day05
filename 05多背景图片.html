@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>多背景图片</title>
+	<style type="text/css">
+		div {
+			width: 550px;
+			height: 500px;
+			/*设置两张背景图片，小图片要先设置*/
+			background-image: url(./img/bq6.png), url(./img/fang.jpg); 
+			/*为两张图片设置不重复（不平铺）*/
+			background-repeat: no-repeat, no-repeat;
+			/*设置两张图片的显示位置，可以用left、right、bottom、top、center、数值等*/
+			background-position: right top, left top;
+			/*为两张图片设置大小*/
+			background-size: 50px 50px, 550px 500px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div>
+		<h1>悯农</h1>
+		<p>锄禾日当午</p>
+		<p>汗滴禾下土</p>
+		<p>谁知盘中餐</p>
+		<p>粒粒皆辛苦</p>	
+	</div>
+</body>
+</html>

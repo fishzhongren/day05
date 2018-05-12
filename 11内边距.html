@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内边距</title>
+	
+	<style type="text/css">
+		span {
+			width: 100px;
+			display: block;	/*将行内元素转为块级元素*/
+			background-color: hotpink;
+			margin-bottom: 5px;
+			font-size: 30px;
+			border: 2px solid blue;	/*设置盒子的边框*/
+		}
+		
+		span.one {
+			padding: 50px;	/*内边距：内容四周和border之间的距离*/
+		}
+		.two {
+			padding: 30px 10px;	/*上下是30px  左右是10px*/
+		}
+
+	</style>
+
+</head>
+<body>
+	
+	<span class="one">锄禾日当午</span>
+	<span class="two">汗滴禾下土</span>
+	<span class="three">谁知盘中餐</span>
+	<span class="four">粒粒皆辛苦</span>
+	
+</body>
+</html>

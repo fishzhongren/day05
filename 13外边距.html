@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>外边距</title>
+	
+	<style type="text/css">
+		div {	/*块级元素设置外边距*/
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			margin: 10px;
+		}
+
+		span {	/*行内元素可以设置水平方向的内外边距，垂直方向上的内外边距无效（不能设置）*/
+			background-color: lightgreen;
+			margin-left: 20px;
+			margin-right: 30px;
+			/*margin-bottom: 10px;
+			margin-top: 20px;*/
+
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<hr>
+
+	<span>这是一个span元素</span><span>这是一个span元素</span><span>这是一个span元素</span><br>
+	
+	
+</body>
+</html>

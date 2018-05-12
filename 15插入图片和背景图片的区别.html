@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>15插入图片和背景图片的区别.html</title>
+
+	<style type="text/css">
+		section {	/*针对盒子来说，要移动图片的位置，使用内边距*/
+			width: 500px;
+			height: 500px;
+			background-color: lightgreen;
+			padding: 50px;
+		}
+		img {	/*针对图片自己本身要在盒子中移动位置，使用外边距*/
+			width: 200px;	/*设置图片宽高*/
+			height: 200px;
+			margin-left: 20px;	/*图片自己本身左边空开的距离 */
+			margin-top: 30px;
+		}
+
+		aside {
+			width: 500px;
+			height: 500px;
+			background-color: lightblue;
+			background-image: url(./img/fang.jpg);
+			background-repeat: no-repeat;
+			-webkit-background-size: 300px 200px;
+			background-size: 300px 200px;
+			background-position: right top;
+		}
+
+	</style>
+</head>
+<body>
+	1、插入图片使用img标签，设置宽高使用width和height，设置位置用margin和padding
+	<section>	<!-- 插入图片 -->
+		<img src="img/boy.png"/>
+		12345	<!-- 插入的图片会将盒子中的文本挤压到图片之后显示-->
+	</section>
+
+	2、背景图片使用background-image，设置宽高使用background-size，设置位置用background-position
+	<aside>	<!-- 背景图片 -->
+		12345	<!-- 背景图片则是被当成背景使用，文本还是显示在盒子中背景图片之上 -->
+	</aside>
+
+	3、一般情况下背景图片适合做一些小图标使用，产品展示之类的就用插入图片
+	
+</body>
+</html>

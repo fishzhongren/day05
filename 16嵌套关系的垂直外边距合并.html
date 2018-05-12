@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>16嵌套关系的垂直外边距合并.html</title>
+
+	<style type="text/css">
+	/*对于两个嵌套关系的块元素，如果父元素没有上内边距及边框，则父元素的上外边距会与子元素的上外边距合并，合并后的外边距为两者中的较大者。即使父元素的上外边距为0，也会发生合并。
+	解决方案：
+	1.可以为父元素定义1像素的上边框border或上内边距padding
+	2.可以为父元素添加overflow: hidden;
+	*/
+		.father {
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			padding: 0px 10px 10px 10px;
+			margin: 0 10px 10px 10px;
+			/*border: 1px solid red;*/
+			overflow: hidden;
+		}
+
+		.son {
+			width: 200px;
+			height: 200px;
+			background-color: lightgreen;
+			margin: 30px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="father">
+		<div class="son"></div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新浪导航</title>
+	
+	<style type="text/css">
+	body {	/*清除整个网页中所有元素的外边距*/
+		margin: 0;
+	}
+
+	.w {	/*设置网页的主体都是1000px，并且在网页居中*/
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	div {	/*设置div盒子的高度和背景*/
+		height: 41px;
+		background-color: #FCFCFC;
+	}
+	div.all {	/*设置通栏的上边框和下边框，宽度是整个网页的宽度*/
+		border-top: 3px solid #FF8500;
+		border-bottom: 1px solid #EDEEF0;
+	}
+	a {	
+		display: inline-block;	/*将行内元素转为行内块元素*/
+		height: 41px;
+		font-size: 14px;
+		font-family: "Microsoft Yahei";
+		text-decoration: none;	/*去掉超链接的下划线*/
+		text-align: center;		/*文本水平居中*/
+		line-height: 41px;		/*文本垂直居中*/
+		padding: 0 14px;		/*设置内边距，保证每个超链接之间的空白都一样宽*/
+	}
+
+	a:link {	/*设置未访问链接的颜色*/
+		color: #4C4C4C;
+	}	
+	a:hover {	/*设置鼠标经过链接时的颜色*/
+		color: #ff8400;
+		background-color: #edeef0;
+	}
+	
+	</style>
+
+</head>
+<body>
+	
+	<div class="all">
+		<div class="w">
+			<a href="">首页</a>
+			<a href="">客户端</a>
+			<a href="">网址导航</a>
+			<a href="">手机新浪网</a>
+		</div>	
+	</div>
+
+
+</body>
+</html>
